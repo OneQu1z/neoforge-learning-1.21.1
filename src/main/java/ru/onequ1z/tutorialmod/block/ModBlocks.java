@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ru.onequ1z.tutorialmod.TutorialMod;
+import ru.onequ1z.tutorialmod.block.custom.MagicBlock;
 import ru.onequ1z.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -30,6 +31,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BISMUTH_DEEPSLATE_ORE = registerBlock("bismuth_deepslate_ore",
                 () -> new DropExperienceBlock(UniformInt.of(3, 6),
                         BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+                    () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
 
