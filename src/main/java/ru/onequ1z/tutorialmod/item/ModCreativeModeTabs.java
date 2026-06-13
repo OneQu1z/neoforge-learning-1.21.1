@@ -25,7 +25,7 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCKS_TAB = CREATIVE_MODE_TAB.register("bismuth_blocks_tab",
-                () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BISMUTH.get()))
+                () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK.get()))
                         .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "bismuth_items_tab"))
                         .title(Component.translatable("creativetab.tutorialmod.bismuth_blocks"))
                         .displayItems((itemDisplayParameters, output) -> {
